@@ -1,0 +1,39 @@
+website?
+Collection mutiple web 
+
+->Front-end :- clinet server (user inter) show
+	--> web design
+	--> fundametal 
+	HTML :- str
+	css  :- Design
+	Javascript :- bhivor slider,form
+	boostrap :- dummy :- how data chanage
+	--> layout
+
+-> framwork	
+
+	advance js :- advance , oops ,api
+	React :- Crud 
+
+	project :- Ec, medi , clg 
+	
+--> 
+	C , C++(oops) , database(sql)
+
+->Back-end (profile (admin path)hide)
+	
+	--> python , java , php (basic)
+	--> python , java , php (advance basic)
+	
+	--> djngo(admin panel),spring,lavravel
+
+1 2 3 4 5
+I II III IV V
+
+
+http://www.google.com
+
+
+
+
+
