@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <marquee  direction="left">Today is sale day</marquee>
+    <marquee  direction="right">Today is sale day</marquee>
+    <marquee  direction="up">Today is sale day</marquee>
+    <marquee  direction="down">Today is sale day</marquee>
+
+    <!-- 1) block level inner block -> yes 
+    2) block level inner inine -> yes 
+    3) inline level inner inline  -> yes 
+    4) inline level block  ->  no  -->
+
+
+    <!--  1) block level inner block  -->
+    <div>
+        hello this div tag <h1>hello this h1 tag</h1>
+    </div>
+
+    <!--   2) block level inner inine --->
+
+    <div>
+        Lorem, ipsum dolor sit <b>amet consectetur</b> adipisicing elit. Eum nulla consectetur necessitatibus. Deleniti, totam?
+        Molestias nemo, <i>fugiat quibusdam</i> repellendus minima, explicabo, saepe quasi porro est nam illo maiores eum
+        debitis. <mark>Lorem ipsum dolor sit amet consectetur,</mark> adipisicing elit. Nobis libero esse tempore? Ducimus, unde at,
+        aliquid, eos amet molestias sapiente consequatur eum nemo earum labore sint? Hic reiciendis quo ipsam!
+    </div>
+
+    <!-- 3) inline tag inner inline yes -->
+
+
+    <b>hello <i>this </i> data</b>
+
+    <!-- inline tag inner block nop -->
+    <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero tenetur quasi ipsam iste repudiandae! Cupiditate voluptate beatae quis provident. Omnis aliquam ut accusantium placeat aut veritatis repudiandae commodi molestias quaerat.
+        <h1>sdhjkh</h1>
+    </b>
+
+</body>
+
+</html>
