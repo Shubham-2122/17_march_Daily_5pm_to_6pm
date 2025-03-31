@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- pattern [] -->
+
+    <form action="">
+        <table align="center">
+            <caption>Form data</caption>
+            <tr>
+                <td><label for="">Enter your name</label></td>
+                <!-- <td><input type="text" placeholder="Enter your name" pattern="[A-Za-z]+" title="Name" required></td> -->
+                <td><input type="text" placeholder="Enter your name" pattern="[A-Za-z]{4,8}" title="Name" required></td>
+            </tr>
+            <tr>
+                <td><label for="">Enter your Number</label></td>
+                <!-- <td><input type="tel" placeholder="Enter your Number" pattern="[0-9]+" required></td> -->
+                <!-- <td><input type="tel" placeholder="Enter your Number" pattern="[0-9]{10}" required></td> -->
+                <td><input type="tel" placeholder="Enter your Number" maxlength="10" pattern="[6789][0-9]{9}" required>
+                </td>
+            </tr>
+            <tr>
+                <td> <label for="">Gneder :- </label></td>
+                <td> <input type="radio" name="Gender"> Male
+                    <input type="radio" name="Gender"> Female
+                    <input type="radio" name="Gender"> others
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Enter Your Email</label></td>
+                <!-- shubhamjadav.tops@gmail.com -->
+                 <!--  [a-z0-9.]+@+[a-z]+.+[a-z]{2,3}-->
+                <td><input type="email" required placeholder="Enter your Email" pattern=""></td>
+            </tr>
+            <tr>
+                <td><label for="">Enter your Passowrd</label></td>
+                <!-- <td><input type="password" pattern="[A-Z][A-Za-z0-9]+" placeholder="Enter your passowrd" required></td> -->
+                <td><input type="password" pattern="[A-Z][A-Za-z0-9]{8,12}" maxlength="12"
+                        placeholder="Enter your passowrd" required></td>
+            </tr>
+            <tr>
+                <td><label for="">Enter your Quntiy</label></td>
+                <td><input type="number" required max="6" min="1"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
