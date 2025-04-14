@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tri{
+            height: 200px;
+            width: 200px;
+            background-color: lightcoral;
+            /* clip-path: polygon(x y, x y ); */
+            clip-path: polygon(50% 0%,100% 100%,0% 100%);
+        }
+        .hex{
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            margin-top: 30px;
+            clip-path: polygon(50% 0%,0% 25%,0% 75%,50% 100%,100% 75%,100% 25%);
+        }
+        .cirle{
+            height: 200px;
+            width: 200px;
+            background-color: rgb(21, 7, 102);
+            clip-path: circle(50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="tri"></div>
+    <div class="hex"></div>
+    <div class="cirle"></div>
+</body>
+</html>
