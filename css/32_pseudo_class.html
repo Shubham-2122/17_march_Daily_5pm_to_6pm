@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li:first-child {
+            background-color: red;
+        }
+
+        ul li:last-child {
+            background-color: green;
+        }
+
+        ul li:nth-child(4) {
+            background-color: aqua;
+        }
+
+        ul li:nth-child(even) {
+            background-color: lightcoral;
+        }
+
+        ul li:nth-child(odd) {
+            background-color: aqua;
+        }
+
+        ul li:nth-last-child(2) {
+            background-color: gold;
+        }
+
+        .main {
+            height: 200px;
+            width: 200px;
+            border: 2px solid;
+            transition: 1s;
+        }
+
+        .main:hover {
+            background-color: lightcoral;
+            /* border-radius: 50%; */
+            /* transform: translate(100px,100px); */
+            transform: scale(1.1);
+        }
+
+        .main:hover span {
+            color: white;
+        }
+
+        input {
+            margin: 20px;
+            outline: none;
+            border: none;
+        }
+
+        input:focus {
+            border: 4px solid red;
+            background-color: aqua;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- pesude class:- (:) single clon -->
+    <!-- pesude element:- (::) single clon -->
+
+    <ul>
+        <li>one</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+        <li>Five</li>
+        <li>Six</li>
+    </ul>
+
+    <div class="main">
+        <span>Hello this data</span>
+    </div>
+
+    <input type="text" placeholder="enter your name">
+
+</body>
+
+</html>

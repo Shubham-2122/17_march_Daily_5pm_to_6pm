@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li::first-letter {
+            background-color: red;
+        }
+
+        .main::first-line {
+            background-color: lawngreen;
+        }
+
+        .main::selection {
+            background-color: lightcoral;
+            color: white;
+        }
+        ul li::before{
+            content: "ssd";
+            height: 100px;
+        }
+        ul li::after{
+            content: "h";
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>Home</li>
+        <li>ABout</li>
+        <li>Contact</li>
+        <li>Help</li>
+        <li>Pages</li>
+        <li>Data</li>
+    </ul>
+
+    <div class="main">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia minima nisi quos laudantium perferendis maxime
+        aut quam porro, consequuntur laborum eligendi voluptas, praesentium accusantium. Voluptatibus laboriosam odio
+        dolorem quidem libero! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, assumenda nam impedit
+        repudiandae ullam quasi eos qui adipisci ad quidem consectetur laboriosam sed cupiditate minima reprehenderit
+        voluptates quod? Eum, neque.
+    </div>
+</body>
+
+</html>
