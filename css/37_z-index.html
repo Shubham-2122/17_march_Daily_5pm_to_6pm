@@ -1,45 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .main{
+        .main {
             position: relative;
         }
-        .box{
+
+        .box {
             height: 200px;
             width: 200px;
             border: 2px solid;
             position: absolute;
         }
-        #box1{
-            top: 50px ;
+
+        #box1 {
+            top: 50px;
             left: 50px;
             background-color: red;
-            
-z-index: 3;
+            z-index: 3;
         }
-        #box2{
-            top: 100px ;
+
+        #box2 {
+            top: 100px;
             left: 100px;
             background-color: rgb(11, 148, 125);
             z-index: 1;
         }
-        #box3{
-            top: 150px ;
+
+        #box3 {
+            top: 150px;
             left: 150px;
             background-color: lawngreen;
             z-index: 2;
         }
-        #box4{
-            top: 200px ;
+
+        #box4 {
+            top: 200px;
             left: 200px;
             background-color: salmon;
         }
     </style>
 </head>
+
 <body>
     <div class="main">
         <div class="box" id="box1">1</div>
@@ -48,4 +54,5 @@ z-index: 3;
         <div class="box" id="box4">4</div>
     </div>
 </body>
+
 </html>
