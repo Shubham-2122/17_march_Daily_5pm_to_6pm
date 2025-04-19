@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        nav{
+            background-color: aqua;
+            display: flex;
+            justify-content: space-between;
+            /* justify-content: space-around; */
+            align-items: center;
+            padding: 20px 0 ;
+        }
+        ul li{
+            display: inline-block;
+        }
+        .sec1{
+            background-color: lightcoral;
+            display: flex;
+        }
+        .box{
+            width: 25%;
+            height: 400px;
+            border: 2px solid;
+        }
+        .sec2{
+            display: flex;
+            background:lawngreen ;
+        }
+        .box1{
+            width: 33.33%;
+            height: 400px;
+            border: 2px solid;
+        }
+        #box{
+            display: flex;
+            flex-direction: column;
+        }
+        .top,.bottom{
+            height: 50%;
+            width: 100%;
+            border: 2px solid gold;
+        }
+        #box1{
+            display: flex;
+        }
+        .left,.right{
+            width: 50%;
+            border: 2px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">logo</div>
+            <ul>
+                <li>Home</li>
+                <li>ABout</li>
+                <li>Contact</li>
+                <li>Help</li>
+            </ul>
+            <div class="icon">icon</div>
+        </nav>
+    </header>
+
+    <section class="sec1">
+        <div class="box">1</div>
+        <div class="box" id="box">
+            <div class="top">top</div>
+            <div class="bottom">bottom</div>
+        </div>
+        <div class="box" id="box1">
+            <div class="left">left</div>
+            <div class="right">right</div>
+        </div>
+        <div class="box">4</div>
+    </section>
+
+    <section class="sec2">
+        <div class="box1">1</div>
+        <div class="box1">2</div>
+        <div class="box1">3</div>
+       
+    </section>
+</body>
+</html>
