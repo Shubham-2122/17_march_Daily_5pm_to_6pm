@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* utilies / reuse */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* header start */
+#Header {
+    background-image: url("/Images/header.png");
+    background-size: 100% 100%;
+}
+
+.nav-color {
+    background-color: rgb(46, 124, 188, 0.5);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.navbar .logo {
+    width: 100px;
+}
+
+.navlist .list {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.navlist .list .nav-a {
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Poppins";
+    text-decoration: none;
+}
+
+.navbar .icon .nav-i {
+    font-size: 25px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.header-main {
+    color: #ffffff;
+    text-align: center;
+    padding: 120px 0px;
+}
+.header-main .header-h1 {
+    font-size: 75px; 
+    font-weight: 700;
+    font-family: "Poppins"; 
+}
+
+.header-main .header-p {
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "Nunito";
+    width: 60%;
+    margin:  25px auto;
+}
+
+.header-main .header-btn {
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "Nunito";
+    width: 250px;
+    margin: 0 auto;
+    cursor: pointer;
+    padding: 10px 0px;
+    border-radius: 32px;
+    background-color: #edc315;
+}
+
+/* header end */
