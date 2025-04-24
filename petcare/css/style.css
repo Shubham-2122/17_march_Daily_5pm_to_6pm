@@ -44,32 +44,42 @@
     text-decoration: none;
 }
 
-.navbar .icon .nav-i {
+.navbar .icon .nav-i,
+.nav-b {
     font-size: 25px;
     color: #ffffff;
     text-decoration: none;
 }
+
+.nav-b {
+    display: none;
+}
+
 .header-main {
     color: #ffffff;
     text-align: center;
     padding: 120px 0px;
 }
+
 .header-main .header-h1 {
-    font-size: 75px; 
+    font-size: 75px;
+    /* min,res,max */
+    /* 21 start 74 end  */
+    font-size: clamp(20px, 7.5vw, 75px);
     font-weight: 700;
-    font-family: "Poppins"; 
+    font-family: "Poppins";
 }
 
 .header-main .header-p {
-    font-size: 30px;
+    font-size: clamp(16px, 3.4vw, 30px);
     font-weight: 400;
     font-family: "Nunito";
     width: 60%;
-    margin:  25px auto;
+    margin: 25px auto;
 }
 
 .header-main .header-btn {
-    font-size: 30px;
+    font-size: clamp(16px, 3.4vw, 30px);
     font-weight: 400;
     font-family: "Nunito";
     width: 250px;
@@ -81,3 +91,76 @@
 }
 
 /* header end */
+
+/* Title start */
+#Title {
+    background-color: #739ee3;
+    padding: 30px 0;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+#Title::after{
+    content: url("/Images/Design.png");
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.title-main {
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.title-main .title-h1 {
+    font-size: clamp(20px, 7.5vw, 75px);
+    font-weight: 700;
+    font-family: "Poppins";
+}
+
+.title-main .title-p {
+    font-size: clamp(16px, 3.4vw, 30px);
+    font-weight: 400;
+    font-family: "Nunito";
+    width: 60%;
+    margin: 20px auto;
+}
+
+.card-data .row {
+    display: flex;
+}
+
+.card-data .row .col {
+    width: 33.33%;
+    /* border: 2px solid; */
+}
+
+.card .card-img {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.card-content {
+    font-family: "Poppins";
+    text-align: center;
+    padding: 20px 0;
+}
+
+.card-content .card-h4 {
+    font-size: clamp(18px, 4vw, 37px);
+    color: #ffffff;
+    font-weight: 700;
+
+}
+
+.card-content .card-p {
+    width: 70%;
+    margin: 10px auto;
+    font-size: clamp(16px, 3.2vw, 22px);
+    color: #ffffff;
+    font-weight: 400;
+
+}
+
+/* Title end */

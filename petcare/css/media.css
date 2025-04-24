@@ -5,8 +5,38 @@
     
 }
 @media only screen and (max-width:768px) {
-    
+    .navlist{
+        display: none;
+    }
+    .nav-b{
+        display: block;
+    }
+    .nav-i{
+        display: none;
+    }
+    .header-main .header-p {
+        width: 90%;
+    }
+    .header-main .header-btn{
+        width: 150px;
+    }
+    .header-main{
+        padding: 60px 0;
+    }
+    .title-main .title-p{
+        width: 90%;
+    }
+    .card-data .row {
+        flex-direction: column;
+        /* display: block; */
+    }
+    .card-data .row .col{
+        width: 70%;
+        margin: 0 auto;
+    }
 }
 @media only screen and (max-width:576px) {
-    
+    .card-data .row .col{
+        width: 90%;
+    }
 }
