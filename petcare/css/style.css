@@ -100,7 +100,8 @@
     z-index: 1;
     overflow: hidden;
 }
-#Title::after{
+
+#Title::after {
     content: url("/Images/Design.png");
     position: absolute;
     top: 0;
@@ -164,3 +165,127 @@
 }
 
 /* Title end */
+
+/* sec2 start */
+#sec2 {
+    background-color: #739ee3;
+    padding: 40px 0;
+}
+
+.sec2 .row {
+    display: flex;
+    align-items: center;
+}
+
+.sec2 .row .col {
+    width: 50%;
+    /* border: 2px solid; */
+}
+
+.sec2-img {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.sec2-content .sec2-h1 {
+    font-size: clamp(20px, 7.5vw, 75px);
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Poppins";
+}
+
+.sec2-content .sec2-p {
+    font-size: clamp(16px, 3.4vw, 30px);
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Poppins";
+    width: 90%;
+    margin: 20px 0;
+}
+
+.sec2-content .sec2-btn {
+    border: none;
+    border-radius: 32px;
+    padding: 15px 30px;
+    background-color: #edc315;
+    font-size: clamp(16px, 3.2vw, 25px);
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Poppins";
+    text-align: center;
+}
+
+/* sec2 end */
+
+/* sec3 start */
+.sec3 .row {
+    display: flex;
+    align-items: center;
+}
+
+.sec3 .row .col {
+    width: 50%;
+    /* border: 2px solid; */
+}
+
+/* sec3 end */
+
+
+/* footer start */
+
+#footer {
+    background-color: #343434;
+    padding: 60px 0;
+}
+
+#footer .row {
+    display: flex;
+}
+
+#footer .row .col-4 {
+    width: 40%;
+}
+
+#footer .row .col-6 {
+    width: 60%;
+}
+
+.footer .row .col {
+    width: 33.33%;
+    /* border: 2px solid goldenrod; */
+}
+
+.footer .footer-h4 {
+    font-size: clamp(18px, 4vw, 33px);
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Nunito";
+}
+
+.footer-ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.footer-ul .footer-li {
+    margin: 10px 0;
+}
+
+.footer-ul .footer-li .footer-a {
+    text-decoration: none;
+    font-size: clamp(16px, 3.2vw, 25px);
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Nunito";
+}
+
+.footer .footer-p {
+    width: 85%;
+    margin: 20px 0;
+    font-size: clamp(16px, 3.2vw, 25px);
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Nunito";
+}
+
+/* footer end */

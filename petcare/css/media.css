@@ -34,6 +34,43 @@
         width: 70%;
         margin: 0 auto;
     }
+    .sec2 .row {
+        flex-direction: column;
+    }
+    .sec2 .row .col{
+        width: 100%;
+        margin: 20px 0;
+        text-align: center;
+    }
+    .sec3 .row {
+       flex-direction: column-reverse;
+    }
+    
+    .sec3 .row .col {
+        width: 100%;
+        text-align: center;
+        margin: 20px 0;
+   
+    }
+    .sec2-content .sec2-p {
+        width: 100%;
+    }
+    #footer .row {
+        display: block;
+    }
+    #footer .row .col-4 {
+        width: 100%;
+        text-align: center;
+    } 
+    #footer .row .col-6 {
+        width: 100%;
+        text-align: center;
+    }
+    .footer .row .col {
+        width: 100%;
+     
+    }.footer .footer-p {
+        width: 100%;}
 }
 @media only screen and (max-width:576px) {
     .card-data .row .col{
