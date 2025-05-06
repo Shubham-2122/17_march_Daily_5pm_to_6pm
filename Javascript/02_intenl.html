@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+
+    <h1 id="h1"></h1>
+    <h2 id="h2"></h2>
+    
+
+    <!-- js internal javascript -->
+    <script>
+
+        //1 print console.log()
+        console.log("Hello javascript");
+        console.log("hello");
+        console.log("sum =>",5+10);      
+        console.log(10-2);
+
+        // body tag print Dom :- document object model
+        document.write("hello javscript")
+        document.write("<br>hello")
+        document.write("<h1>hello</h1>")
+
+        // dom method 
+        console.log(document.getElementById("h1"))
+        // innerText :- only for text print not html print
+        document.getElementById("h1").innerText = "<i>hello javascript</i>";
+
+        document.getElementById("h2").innerHTML = "<i>Hello javascript</i>"
+
+    </script>
+
+</body>
+</html>
