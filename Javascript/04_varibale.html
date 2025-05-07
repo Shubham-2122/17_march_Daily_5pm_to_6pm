@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- varibale : - to store a value in single varibale name -->
+
+
+    <!-- rule 
+    1) do not start with number. (12name)
+    2) do not start with symbole. (@#asdf)
+    3) do not start with keyword. (consolename) -->
+
+
+    <!-- syntax :- 
+    var varible-name = value -->
+
+
+    <script>
+
+        // varibale total 3 define
+        // 1) var :- global varibale 
+        var x = 10; // delcraition allow
+        var x = 20; //re-delcration allow
+        x = 30; //re-assigement
+        console.log("x =>",x)
+        document.writeln("x =>",x)
+
+        // 2) let :- local varibale
+        let y = 40 // delcraition allow
+        // let y = 50 //re-delcration not allow
+        y = 60 // re-assigement allow
+        console.log("y =>",y)
+        document.write("<br>y =>",y)
+
+        // 3) const :- unqie varibale
+        const z = 70 // delcraition allow
+        // const z = 80 //re-delcration not allow
+        // z = 90 // // re-assigement not allow
+        console.log("z =>",z)
+        document.write("<br>z =>",z)
+        
+    </script>
+
+</body>
+</html>
