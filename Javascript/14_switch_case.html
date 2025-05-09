@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let choice = "1"
+        let a = 30, b = 20
+
+        switch (choice) {
+            case "+":
+                console.log("sum =>", a + b)
+                document.write("sum =>", a + b, "<br>")
+                break;
+            case "-":
+                console.log("sub =>", a - b)
+                document.write("sub =>", a - b, "<br>")
+                break;
+            case "*":
+                console.log("mul =>", a * b)
+                document.write("mul =>", a * b, "<br>")
+                break;
+            case "/":
+                console.log("divi =>", a / b)
+                document.write("divi =>", a / b, "<br>")
+                break;
+            default:
+                console.log("invalid symbols")
+                break;
+        }
+
+    </script>
+</body>
+
+</html>
