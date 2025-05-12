@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Function :- it's block of code (logic). simple call it ().  -->
+    <!-- it's reuse call. -->
+
+    <!-- Function type :-  -->
+    <!-- 1) predefined function  -->
+    <!-- 2) user defined function  -->
+
+    <!-- syntax :- 
+    function funation-name(){
+        ..logic
+    }
+
+    funation-name() -->
+
+    <script>
+
+        // predefined function
+        // console.log("hello")
+        // console.log("hello")
+        // document.write("ehllo")
+        // alert("are your sure")
+        // print()
+
+        // cat user define two type
+        // 1) without parameter 
+
+        let a=20,b=10;
+
+        function sum(){
+            let sum = a + b
+            console.log("sum =>",sum)
+        }
+        sum()
+        sum()
+        sum()
+
+        // 2) with paramter
+
+        function add(a,b){
+            console.log("add =>",a+b)
+            document.write("add =>",a+b,"<br>")
+        }
+        // nan :- not a Number
+        add(40,20)
+        add(30,20)
+        add(50,20)
+
+
+        function sub(a,b){
+            let sub = a-b 
+            return sub 
+        }
+
+        console.log(sub(40,20))
+    </script>
+</body>
+
+</html>
