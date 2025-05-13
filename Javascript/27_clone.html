@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input type="text" onkeypress="test()" placeholder="Enter your data" name="" id="inp"> -->
+         <input type="text" onkeyup="test()" placeholder="Enter your data" name="" id="inp">
+    <textarea name="" id="text" rows="10" cols="30"></textarea>
+
+    <button onclick="test()">Add data</button>
+
+    <script>
+
+        let inpu_tag = document.getElementById("inp")
+        let text_tag = document.getElementById("text")
+
+        function test(){
+            // let value = inpu_tag.value;
+
+            text_tag.innerText = inpu_tag.value;
+        }
+
+
+    </script>
+</body>
+</html>
