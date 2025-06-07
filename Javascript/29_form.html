@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table align="center">
+        <form action="">
+            <tr>
+                <td><input type="text" id="name1" onblur="return validation(name1,nmerr)" placeholder="Enter your name"></td>
+                <td><span id="nmerr"></span></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="surname" onblur="return validation(surname,srerr)" placeholder="Enter your surname"></td>
+                <td><span id="srerr"></span></td>
+            </tr>
+            <tr>
+                <td><input type="email" id="email" onblur="return validation(email,emerr)" placeholder="Enter your Email id"></td>
+                <td><span id="emerr"></span></td>
+            </tr>
+            <tr>
+                <td><input type="password" id="password" onblur="return validation(password,psw)" placeholder="Enter your Password"></td>
+                <td><span id="psw"></span></td>
+            </tr>
+            <tr>
+                <td><input type="submit"></td>
+            </tr>
+        </form>
+    </table>
+
+
+    <script>
+
+        function validation(inp,err){
+            if(inp.value == "" || inp.value == null){
+                err.innerHTML = "pls reuired field....!"
+                err.style.color = "red"
+                return false
+            }
+            else{
+                err.innerHTML = ""
+                return true
+            }
+        }
+
+    </script>
+</body>
+
+</html>
