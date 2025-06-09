@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- primritive : - One data store -->
+
+    <!-- non -primivtive :- all inculde for primitie -->
+    <!-- one and more data store in signle varibale -->
+
+
+    <!-- array : - collection of muiple value store in a single varibale. [] -->
+    <!--  starting index always zero -->
+
+
+    <!-- synatx :- 
+    let arr = [12,34,34,"asd","as"] -->
+
+
+    <script>
+
+        console.log("Hello");
+
+        let arr = [10,203,40,50,"hello","data","das",67,5,3,4]
+        console.log(arr)
+        // document.write(arr)
+        console.log(arr[0])
+        console.log(arr[4])
+
+        // value of index :- state index zero
+        document.write(arr[0]+"<br>")
+        document.write(arr[5],"<br>")
+
+        // simple for loop
+
+        // for(let index=0;index<arr.length;index++){
+        //     console.log(index)
+        //     console.log(arr)
+        //     console.log(arr[index])
+        //     document.write(arr[index],"<br>")
+        // }
+
+        // for of loop :- value
+        // for(let data of arr){
+        //     console.log(data)
+        //     document.write(data,"<br>")
+        // }
+
+        // for in loop index and value
+        for(let data in arr){
+            // console.log(data)
+            console.log(arr[data])
+        }
+
+
+
+    </script>
+    
+</body>
+</html>
