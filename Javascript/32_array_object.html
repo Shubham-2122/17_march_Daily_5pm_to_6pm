@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // nested array
+        let arr = [1,2,3,[4,5,6,[7,8,9]]]
+        console.log(arr)
+        console.log(arr[3][1])
+        console.log(arr[3][3][2])
+
+
+        // nested object
+        let person = {
+            id :1,
+            name : "diya",
+            course : {
+                front : "Front-end",
+                back : "Back-end",
+                Full : "Full-stack"
+            }
+        }
+
+        console.log(person.course.back)
+
+    </script>
+</body>
+</html>

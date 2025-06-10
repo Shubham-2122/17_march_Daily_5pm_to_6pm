@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- object :- collection of muliple value store in single varibale. {} -->
+    <!-- key and value  -->
+<!-- 
+    syntax:- 
+    let data = { 
+        key : value
+        id : 1,
+        name : "asdhjk"
+    } -->
+
+
+    <script>
+
+        let person = {
+            id : 1,
+            name : "kaushal",
+            surname : "patel",
+            course : "Front-end"
+        }
+
+        console.log(person.id)
+        console.log(person.name)
+        console.log(person.surname)
+
+        // document.write(person.id,"<br>")
+        // document.writeln(person.name)
+
+        for(let index in person){
+            console.log(person[index])
+            document.write(index," => ",person[index],"<br>")
+        }
+
+    </script>
+
+</body>
+</html>
