@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            height: 400px;
+            width: 100%;
+            /* overflow: hidden; */
+        }
+
+        button {
+            padding: 10px 20px;
+            background: linear-gradient(red, green);
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <img src="/img/1.jpeg" class="img" height="100%" width="100%" alt="">
+        <img src="/img/2.jpeg" class="img" height="100%" width="100%" alt="">
+        <img src="/img/3.jpeg" class="img" height="100%" width="100%" alt="">
+        <img src="/img/4.jpeg" class="img" height="100%" width="100%" alt="">
+    </div>
+
+    <!-- <button onclick="Slider()">Next image</button> -->
+
+    <button>preves</button>
+
+    <script>
+
+        // tag name 
+        // let img_tag = document.getElementsByTagName("img")
+        // console.log(img_tag)
+
+        let index = 0
+
+        function Slider() {
+
+            let img_tag = document.getElementsByClassName("img")
+            console.log(img_tag)
+
+            for (let i = 0; i < img_tag.length; i++) {
+                // console.log(img_tag[i])
+                img_tag[i].style.display = "none"
+            }
+
+            img_tag[index].style.display = "block"
+
+            index++;
+
+            // 4 reaplce 0
+            if(index == 4){
+                index = 0
+            }
+
+            setTimeout(Slider,1000)
+
+        }
+
+        Slider()
+
+    </script>
+</body>
+
+</html>
