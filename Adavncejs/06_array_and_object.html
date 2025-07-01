@@ -43,6 +43,25 @@
 
         document.writeln(person.course.full)
 
+        // 3) array inner object 
+
+        let data = [1,2,3,4,{
+            name : "shubham",
+            course : "MERN-STACK"
+        },7,8]
+
+        console.log(data)
+        console.log(data[4].name)
+
+        // 4) object inner array 
+        let persondata = {
+            name : "kushal",
+            age : 24,
+            course : ["front","Back","Full-stack"]
+        }
+        console.log(persondata)
+        console.log(persondata.course[1])
+
     </script>
 </body>
 
