@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- class :- it's blue print of object -->
+     <!-- collection of data memeber(varibale) and memeber funtion(function) class. -->
+<!-- 
+    synatx :- 
+    class class-name{
+        fucntion (){
+            varibele
+        }
+        fucntion (){
+            varibele
+        }
+    }
+
+    let data = new class-name -->
+
+    <script>
+
+        class Bank{
+
+            // display
+            // memeber funtion
+            x = function BankDeltalis(pin,blance){
+                // data memeber
+                let bankname = "HDFC"
+                let bankIFSC = "HDFSC0021"
+                let bankblance = blance
+                let banlpin = pin
+
+                console.log("bank pin =>",banlpin)
+                console.log("Bank Balnce =>",bankblance)
+                console.log("Bank name =>",bankname)
+                console.log("Bank IFSC =>",bankIFSC)
+
+            }
+            y = function windrow(){
+                console.log("windrow")
+            }
+            add(){
+                
+            }
+
+        }
+
+        // console.log(Bank)
+        let divya = new Bank()
+        console.log(divya)
+        divya.x(123,20000)
+        divya.x(123,30000)
+        divya.y()
+
+        let user = new Bank()
+        console.log(user)
+
+        user.y()
+
+    </script>
+
+</body>
+</html>
