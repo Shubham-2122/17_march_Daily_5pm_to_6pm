@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+    <!-- /static :- user creata method -->
+
+    <script>
+
+        class xy{
+            x = function data(){
+                console.log("Function data 1 called")
+            }
+            y = function data1(){
+                console.log("Function data 2 called")
+            }
+            constructor(){
+                console.log("hello this constructor logic")
+            }
+            static data(){
+                console.log("Hello this static data")
+            }            
+        }
+        // console.log(xy)
+
+        let ob = new xy 
+        console.log(ob)
+        xy.data()
+        
+
+    </script>
+</body>
+</html>

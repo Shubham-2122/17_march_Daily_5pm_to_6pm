@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- constractor :- same logic and inbuilt function
+     automaticllay same logic value
+     A class may only have one constructor
+     always first call class as object
+    -->
+
+    <script>
+
+        class xy{
+            x = function data(){
+                console.log("Function data 1 called")
+            }
+            y = function data1(){
+                console.log("Function data 2 called")
+            }
+            constructor(){
+                console.log("hello this constructor logic")
+            }
+            // constructor(){
+            //     console.log("Hello his 2")
+            // }
+        }
+        // console.log(xy)
+
+        let data = new xy
+        data.x()
+
+    </script>
+</body>
+</html>

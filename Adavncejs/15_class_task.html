@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- const :- this key keyword -->
+    <script>
+        class arith{
+            constructor(a,b){
+                this.a = a 
+                this.b = b
+                console.log(this.a)
+                console.log(this.b)
+            }
+            sum(){
+                document.writeln(`<h5>sum => ${this.a + this.b}</h5>`)
+            }
+            sub(){
+                document.writeln(`<h5>sub => ${this.a - this.b}</h5>`)
+            }
+            mul(){
+                document.writeln(`<h5>mul => ${this.a * this.b}</h5>`)
+            }
+            divi(){
+                document.writeln(`<h5>divi => ${this.a / this.b}</h5>`)
+            }
+        }
+        const data = new arith(40,20)
+        console.log(data)
+        data.sum()
+        data.mul()
+        data.divi()
+        data.sub()
+    </script>
+</body>
+</html>
