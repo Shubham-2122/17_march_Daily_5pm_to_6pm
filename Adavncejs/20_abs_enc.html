@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- abs and encu :- private hide and hide How to access  -->
+
+
+    <script>
+
+        function Person(name,age){
+            
+            // private data vaild
+            // encul
+            let _name = name;
+            let _age = age;
+            
+            // ansbtr
+            this.getName = ()=>{
+                return _name;
+            }
+
+            this.getAge = () =>{
+                return _age
+            }
+
+            this.seAge =(newage)=>{
+                if(newage){
+                    return _age = newage
+                }
+                else{
+                    return _age
+                }
+            }
+
+        }
+
+        const ob = new Person("Vivek",23)
+        console.log(ob)
+        console.log(ob._name)
+        console.log(ob._age)
+
+
+        console.log(ob.getName())
+        console.log(ob.getAge())
+        ob.seAge(25)
+        console.log(ob.getAge())
+
+</script>
+</body>
+</html>

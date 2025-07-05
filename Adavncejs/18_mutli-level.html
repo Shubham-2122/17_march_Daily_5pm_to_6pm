@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- A -> B -> C  -->
+
+    <script>
+
+        class A{
+            X = function data(){
+                console.log("A class...!")
+                document.writeln("A class Function <br>")
+            }
+        }
+        class B extends A {
+            Y  =function data1(){
+                console.log("B class..!")
+                document.writeln("B class Function <br>")
+            }
+        }
+        class C extends B  {
+            z = function data2(){
+                console.log("C class..!")
+                document.writeln("C class Function <br>")
+            }
+        }
+
+
+        const ob = new C 
+        console.log(ob)
+
+        ob.X()
+        ob.Y()
+        ob.z()
+        ob.X()
+    </script>
+</body>
+</html>

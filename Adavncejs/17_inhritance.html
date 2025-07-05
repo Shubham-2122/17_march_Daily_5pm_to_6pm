@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- inheritance :- one class to another class data process keyword extends  -->
+     <!-- 1) single inheritance A -> B   -->
+     <!-- 2) muliple level inheritance A -> B -> C  -->
+     <!-- 3) muiplate inheritance -> A and B -> C not allow   -->
+     <!-- 4) hriychical inheritance -> A -> B amd A -> C  -->
+     <!-- 5) hynrid inheritance -> two inheritance combine in one  -->
+
+     <!-- A -> B -->
+
+     <script>
+        class A{
+            x = function data(){
+                console.log("A class Function")
+                document.writeln("A class Function <br>")
+            }
+        }
+
+        class B extends A{
+            y = function data1(){
+                console.log("B class Function")
+                document.writeln("B class Function <br>")
+            }
+        }
+
+        const data = new B 
+        console.log(data)
+        data.y()
+        data.x()
+</script>
+</body>
+</html>
