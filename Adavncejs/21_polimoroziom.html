@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- 1) method overloading :- (compile error) :- i have one class in same function as deffrent in parameter -->
+    <!-- 2) method overriding :- (run-time error) :- i have deffrent class in same fucntion as deffrent parameter -->
+
+    <script>
+
+        // class xy {
+        //     data(a){
+        //         console.log("a value =>",a);
+        //     }
+        //     data(a,b){
+        //         console.log("sum value =>",a+b);
+        //     }
+        // }
+
+        // const ab = new xy
+        // console.log(ab)
+        // ab.data(20,20)
+
+
+        class A{
+            data(){
+                console.log("A class...")
+            }
+        }
+
+        class B extends A {
+            data(){
+                console.log("B class...")
+            }
+        }
+
+        class C extends B{
+            data(){
+                console.log("C class...")
+            }
+        }
+
+        // const data1 =new C
+        // console.log(data1)
+        // data1.data()
+        // data1.data()
+
+        const data1 = [new A(),new B(),new C()]
+        console.log(data1)
+
+        data1.forEach((data)=>{
+            data.data()
+        })
+
+    </script>
+
+</body>
+</html>
