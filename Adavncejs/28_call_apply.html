@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- call :- any two object any methdo(function) combine  -->
+
+    <script>
+
+        let data = {
+            fullname : function display(city,state){
+                console.log("Firstname =>",this.firstname,"lastname =>",this.lastname,"city =>",city,"state =>",state)
+            }
+        }
+
+        let person = {
+            firstname :"Vivek",
+            lastname : "patel"
+        }
+
+        let person2 ={
+            firstname : "Het",
+            lastname:"Patel"
+        }
+
+        // call as sparete para,agru
+        data.fullname.call(person,"ahmedabad","gujarat");
+
+        // apply method as arraay
+        data.fullname.apply(person2,["surat","gujarat"])
+        // data.fullname("ahemdabad","guj")
+    </script>
+
+</body>
+</html>
