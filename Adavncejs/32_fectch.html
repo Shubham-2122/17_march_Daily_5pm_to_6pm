@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- fetch :- method 
+    GET :- data read 
+    POST :- Data write new 
+    DELETE :- data remove 
+    PUT :- data update  -->
+    <!-- 
+    SYNTAX :--  
+
+    fetch("location",{
+        method:"GET"
+    })
+    .then(()=>{
+        how to return
+    })
+    .then(()=>{
+        print
+    })
+    .catch(()=>{
+
+    }) -->
+
+    <button onclick="data()">add data</button>
+
+    <h1 id="h1"></h1>
+
+    <script>
+
+        // console.log(fetch())
+
+        function data() {
+            fetch("data.txt", {
+                method: "GET"
+            })
+                .then((res) => {
+                    // how to conervt data text file to string,object,array
+                    return res.text()
+                })
+                .then((data) => {
+                    console.log(data)
+                    document.getElementById("h1").innerHTML = data
+                })
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- promise :- it's object :- req and rej -->
+
+    <!-- type :- state 
+        1) pending : hold data
+        2) fullfield :- Completed data
+        3) reject :- data error show
+    
+    -->
+
+    <!-- let data = new Promise(function(success,error){
+        ...code
+    }) -->
+
+    <script>
+
+        // 1) pending : data hold
+        // 2) completed data :- fullfield
+        // 3) rejected :- data wrong codition ,locaion ,net
+
+        let data = new Promise(function (res, err) {
+            newdata = 10
+            if (newdata === 11) {
+                // console.log("success data")
+                // console.log("suucess data")
+                res("Successfully data")
+            }
+            else{
+                err("data not Found..!")
+            }
+        })
+
+        console.log(data)
+
+    </script>
+
+</body>
+
+</html>
