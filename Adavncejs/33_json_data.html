@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- json :- javascript object notation -->
+
+    <!-- restfull API (application prog interface) -->
+     <!-- json lightwight read ,view,edit -->
+    <!-- javascript :- lagu -->
+
+    <!-- syntax 
+
+    let jsondata = `[
+        {
+            "id":"1",
+            "name":"User",
+            "course":"Front-end"
+        },
+    ]`
+
+    let object = [
+        {
+            id:"1",
+            name : "shubhjam",
+            course : "sadjhi"
+        }   
+    ] -->
+
+
+    <!-- json direct not read -->
+
+
+    <script>
+
+        let jsondata = `[
+            {
+                "id":"1",
+                "name":"vivek",
+                "course":"Front-end"
+            },
+            {
+                "id":"2",
+                "name":"divya",
+                "course":"back-end"
+            },
+              {
+                "id":"3",
+                "name":"jiger sir",
+                "course":"Full-stack"
+            }
+        ]`
+
+        // console.log(jsondata)
+        // document.write(jsondata)
+
+
+        // pars methods json string convert object/array
+        let ob = JSON.parse(jsondata)
+        console.log(ob)
+        // console.log(ob[0])
+        
+        
+
+        for(let data of ob){
+            console.log(data)
+            document.writeln(`<h3> id :- ${data.id} name :- ${data.name} course : ${data.course}</h3>`)
+        }
+
+
+
+        // object to json 
+
+        let perosn = [
+            {
+                id:1,
+                name:"Shubham",
+                course:"mern-stack"
+            },
+            {
+                id:2,
+                name : "sonal maam",
+                course :"Back-office"
+            },
+            {
+                id:3,
+                name : "jiger sir",
+                course :"back-end"
+            }
+        ]
+
+        console.log(perosn)
+
+        let json = JSON.stringify(perosn)
+
+        console.log(json)
+        console.log(jsondata)
+
+    </script>
+
+</body>
+</html>

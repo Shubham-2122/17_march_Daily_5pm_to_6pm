@@ -1,0 +1,34 @@
+{
+    "user":[
+    {
+        "id":1,
+        "name":"Het patel",
+        "age":24,
+        "course":"Front-end"
+    },
+    {
+        "id":2,
+        "name":"Varj patel",
+        "age":23,
+        "course":"Back-end"
+    },
+    {
+        "id":3,
+        "name":"Manav patel",
+        "age":25,
+        "course":"hardware"
+    }   
+    ],
+    "admin":[
+        {
+            "id":1,
+            "name":"Admin",
+            "deparment":"admin"
+        },
+         {
+            "id":2,
+            "name":"sub-Admin",
+            "deparment":"sumadmin data"
+        }
+    ]
+}
