@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function data() {
+            setTimeout(() => {
+                console.log("hello this api")
+            }, 3000)
+        }
+
+        async function output() {
+            console.log("1")
+            console.log(2)
+            let result = await data()
+            result
+            console.log(3)
+            console.log(4)
+
+        }
+        output()
+
+      
+    </script>
+</body>
+
+</html>
