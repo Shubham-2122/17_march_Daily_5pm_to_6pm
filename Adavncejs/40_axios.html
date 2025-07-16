@@ -35,6 +35,41 @@
 
         viewdata()
 
+        let  person = {
+            name : "divya patel",
+            email : "divya@gmail.com",
+            phone : "7827867678"
+        }
+
+        const createuser = async()=>{
+            const res = await axios.post("https://660d95e36ddfa2943b34c530.mockapi.io/user",person)
+            console.log(res.data)
+        }
+        // createuser()
+
+        const deleteuser=async()=>{
+            const res = await axios.delete("https://660d95e36ddfa2943b34c530.mockapi.io/user/5")
+            console.log(res.data)
+        }
+
+        // deleteuser()
+
+        // crud create,read,delete
+
+        let perosn1 = {
+            id:"3",
+            name :"Shubham",
+            email:"shubham.tops@gmail.com",
+            phone :"28634765"
+        }
+
+        const updateuser =async()=>{
+            const res =  await axios.put(`https://660d95e36ddfa2943b34c530.mockapi.io/user/${perosn1.id}`,perosn1)
+            console.log(res.data)
+        }
+
+        updateuser()
+
         
 
     </script>
