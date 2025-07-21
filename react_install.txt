@@ -1,0 +1,22 @@
+Javascript 
+
+React :- fast application (single page) without reresh  compoent
+Agulare :- fast appl reshare (deff page) with reresh compoent define
+vue :- slow (deff page) with reresh
+
+
+react :- javscript lib 
+
+node :- javascript run time evimroment
+
+1) node install 
+2) check for cmd node -v 
+3) check for cmd npm -v
+
+npm(global) vs npx(excute)
+
+react application cmd
+1) npx create-react-app app-name
+2) cd app-name
+3) cmd -> npm start
+
