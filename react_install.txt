@@ -20,3 +20,24 @@ react application cmd
 2) cd app-name
 3) cmd -> npm start
 
+node 
+npm i - > npm install
+
+vite
+
+Step 2: Create a New Project with Vite
+Vite provides a simple way to scaffold new projects. You can use the following command to create a new React project with Vite.
+
+npm create vite@latest my-react-app 
+cd my-react-app
+
+floder strucher
+1) nodel module :- server start 
+2) public :- assest/image index.html
+3) src :- index.js  -> app.js
+4) package-lock.json 
+5) package.json
+
+
+
+
