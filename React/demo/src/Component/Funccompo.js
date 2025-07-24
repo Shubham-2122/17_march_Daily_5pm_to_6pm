@@ -49,9 +49,12 @@
 import React from 'react'
 
 const Funccompo = () => {
+  
+  console.log("Helo")
   return (
     <div>
       <h1>Hello this RAFCE :- REACT Arrow fucntion compoent export</h1>
+      
     </div>
   )
 }

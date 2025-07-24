@@ -1,6 +1,7 @@
 import React from "react";
-import ClassCompo from "./Component/ClassCompo";
-import Funccompo from "./Component/Funccompo";
+import User from "./Jsx/User";
+// import ClassCompo from "./Component/ClassCompo";
+// import Funccompo from "./Component/Funccompo";
 
 
 function App() {
@@ -8,10 +9,12 @@ function App() {
         <div>
             <h1>hello React web application</h1>
             {/* class copo  */}
-            <ClassCompo />
-            <ClassCompo />
-            <Funccompo />
-            <Funccompo />
+            {/* <ClassCompo /> */}
+            {/* <Funccompo /> */}
+
+            <User />
+
+
         </div>
     )
 }
