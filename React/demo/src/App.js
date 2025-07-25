@@ -1,5 +1,6 @@
 import React from "react";
-import User from "./Jsx/User";
+import Css from "./Css/Css";
+// import User from "./Jsx/User";
 // import ClassCompo from "./Component/ClassCompo";
 // import Funccompo from "./Component/Funccompo";
 
@@ -12,8 +13,11 @@ function App() {
             {/* <ClassCompo /> */}
             {/* <Funccompo /> */}
 
-            <User />
+            {/* jsx component */}
+            {/* <User /> */}
 
+            {/* style apply */}
+            <Css />
 
         </div>
     )
