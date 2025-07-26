@@ -1,5 +1,6 @@
 import React from "react";
-import Css from "./Css/Css";
+import Propsdara from "./Props/Propsdara";
+// import Css from "./Css/Css";
 // import User from "./Jsx/User";
 // import ClassCompo from "./Component/ClassCompo";
 // import Funccompo from "./Component/Funccompo";
@@ -17,7 +18,10 @@ function App() {
             {/* <User /> */}
 
             {/* style apply */}
-            <Css />
+            {/* <Css /> */}
+
+            {/* props data */}
+            <Propsdara />
 
         </div>
     )
