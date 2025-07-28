@@ -1,5 +1,6 @@
 import React from "react";
 import Propsdara from "./Props/Propsdara";
+import Statedata from "./state/Statedata";
 // import Css from "./Css/Css";
 // import User from "./Jsx/User";
 // import ClassCompo from "./Component/ClassCompo";
@@ -21,7 +22,9 @@ function App() {
             {/* <Css /> */}
 
             {/* props data */}
-            <Propsdara />
+            {/* <Propsdara /> */}
+
+            <Statedata />
 
         </div>
     )
