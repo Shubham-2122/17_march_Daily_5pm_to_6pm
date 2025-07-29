@@ -11,6 +11,7 @@ import Image from './Image';
 class ClassState extends Component {
   constructor(){
     super();
+    // initli
     this.state = {
         name : "Vivek",
         counter : 0,
@@ -23,6 +24,7 @@ class ClassState extends Component {
         console.log(this.state.name)
     return (
       <div>
+        {/* access */}
         <h1>hello {this.state.name}</h1>
         {/* inbuilt as react class */}
         <button onClick={()=>this.setState({name : "divya"})}>Change name</button>
@@ -31,6 +33,7 @@ class ClassState extends Component {
         <h1>Hello count : {this.state.counter}</h1>
 
         {/* sum = sum + 1 */}
+        {/* change */}
         <button onClick={()=>this.setState({counter : this.state.counter + 1})}>Increment</button>
 
         <button onClick={()=>this.setState({counter:this.state.counter - 1})}>Decrement</button>
@@ -44,7 +47,7 @@ class ClassState extends Component {
           <button onClick={()=>this.setState({isImage : false})}> Hide </button>
           <button onClick={()=>this.setState({isImage:true})}>Show</button>
 
-          <button onClick={()=>this.setState()}>Toggle</button>
+          <button onClick={()=>this.setState({isImage:!this.state.isImage})}>Toggle</button>
 
         {(this.state.isImage)?<Image />:null}
         
