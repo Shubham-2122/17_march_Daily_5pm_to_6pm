@@ -1,6 +1,7 @@
 import React from 'react'
 import ClassState from './ClassState'
 import FunState from './FunState'
+import Funobject from './Funobject'
 
 function Statedata() {
   return (
@@ -10,7 +11,8 @@ function Statedata() {
       1) class 
       2) function */}
       {/* <ClassState /> */}
-      <FunState />
+      {/* <FunState /> */}
+      <Funobject />
     </div>
   )
 }
