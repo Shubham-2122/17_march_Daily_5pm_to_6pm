@@ -1,6 +1,8 @@
 import React from "react";
 import Propsdara from "./Props/Propsdara";
 import Statedata from "./state/Statedata";
+import Formdata from "./Form_handling/Formdata";
+import Formobject from "./Form_handling/Formobject";
 // import Css from "./Css/Css";
 // import User from "./Jsx/User";
 // import ClassCompo from "./Component/ClassCompo";
@@ -24,7 +26,10 @@ function App() {
             {/* props data */}
             {/* <Propsdara /> */}
 
-            <Statedata />
+            {/* <Statedata /> */}
+
+            {/* <Formdata /> */}
+            <Formobject />
 
         </div>
     )
