@@ -1,6 +1,6 @@
 import React from 'react'
-import ClassState from './ClassState'
-import FunState from './FunState'
+// import ClassState from './ClassState'
+// import FunState from './FunState'
 import Funobject from './Funobject'
 
 function Statedata() {

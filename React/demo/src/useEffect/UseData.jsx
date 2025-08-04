@@ -18,9 +18,38 @@ function UseData() {
   return (
     <div>
       <h1>hello this axios data</h1>
-      {
-        console.log(user)
-      }
+      
+     
+          <div className="container">
+              <table className="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#id</th>
+                        <th scope="col">name</th>
+                        <th scope="col">email</th>
+                        <th scope="col">address</th>
+                        <th scope="col">company name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {
+                        user && user.map((user) => {
+                            console.log(user)
+                            return (
+                                <tr>
+                                    <th scope="row">{user.id}</th>
+                                    <td>{user.name}</td>
+                                    <td>{user.email}</td>
+                                    <td>{user.address.city}</td>
+                                    <td>{user.company.name}</td>
+                                </tr>
+                            )
+                        })
+                    }
+                </tbody>
+            </table>
+          </div>
+      
     </div>
   )
 }

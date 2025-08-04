@@ -1,11 +1,12 @@
 import React from "react";
-import Propsdara from "./Props/Propsdara";
-import Statedata from "./state/Statedata";
-import Formdata from "./Form_handling/Formdata";
-import Formobject from "./Form_handling/Formobject";
-import Effect from "./useEffect/Effect";
-import UseTable from "./useEffect/UseTable";
-import UseData from "./useEffect/UseData";
+// import Propsdara from "./Props/Propsdara";
+// import Statedata from "./state/Statedata";
+// import Formdata from "./Form_handling/Formdata";
+// import Formobject from "./Form_handling/Formobject";
+// import Effect from "./useEffect/Effect";
+// import UseTable from "./useEffect/UseTable";
+// import UseData from "./useEffect/UseData";
+import Product from "./useEffect/Product";
 // import Css from "./Css/Css";
 // import User from "./Jsx/User";
 // import ClassCompo from "./Component/ClassCompo";
@@ -37,7 +38,8 @@ function App() {
             {/* useEfect */}
             {/* <Effect /> */}
             {/* <UseTable /> */}
-            <UseData />
+            {/* <UseData /> */}
+            <Product />
 
         </div>
     )
