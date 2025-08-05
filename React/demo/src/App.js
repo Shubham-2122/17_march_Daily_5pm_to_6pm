@@ -7,6 +7,10 @@ import React from "react";
 // import UseTable from "./useEffect/UseTable";
 // import UseData from "./useEffect/UseData";
 import Product from "./useEffect/Product";
+import Boot from "./bootstrap/Boot";
+import ReactCard from "./bootstrap/ReactCard";
+import MdbCard from "./bootstrap/MdbCard";
+import Footer from "./bootstrap/Footer";
 // import Css from "./Css/Css";
 // import User from "./Jsx/User";
 // import ClassCompo from "./Component/ClassCompo";
@@ -39,7 +43,12 @@ function App() {
             {/* <Effect /> */}
             {/* <UseTable /> */}
             {/* <UseData /> */}
-            <Product />
+            {/* <Product /> */}
+
+            {/* <Boot /> */}
+            {/* <ReactCard /> */}
+            <MdbCard />
+            <Footer />
 
         </div>
     )
