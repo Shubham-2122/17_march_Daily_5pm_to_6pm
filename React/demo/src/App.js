@@ -3,6 +3,10 @@ import Home from "./layout/Pages/Home";
 import About from "./layout/Pages/About";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Contact from "./layout/Pages/Contact";
+import About1 from "./layout/Pages/About1";
+import About2 from "./layout/Pages/About2";
+import About3 from "./layout/Pages/About3";
+import Not from "./layout/Pages/Not";
 // import Propsdara from "./Props/Propsdara";
 // import Statedata from "./state/Statedata";
 // import Formdata from "./Form_handling/Formdata";
@@ -58,8 +62,15 @@ function App() {
 
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
+                <Route path="/about" element={<About />} >
+                    <Route path="about1" element={<About1 />} />
+                    <Route path="about2" element={<About2 />} />
+                     <Route path="about3" element={<About3 />} />
+                </Route>
                 <Route path="/contact" element={<Contact />} />
+
+                {/* universal path */}
+                <Route path="*" element={<Not />} />
             </Routes>
            
         </div>
