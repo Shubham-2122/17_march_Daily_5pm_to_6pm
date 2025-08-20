@@ -7,6 +7,7 @@ import About1 from "./layout/Pages/About1";
 import About2 from "./layout/Pages/About2";
 import About3 from "./layout/Pages/About3";
 import Not from "./layout/Pages/Not";
+import Maincontext from "./context/Maincontext";
 // import Propsdara from "./Props/Propsdara";
 // import Statedata from "./state/Statedata";
 // import Formdata from "./Form_handling/Formdata";
@@ -68,6 +69,7 @@ function App() {
                      <Route path="about3" element={<About3 />} />
                 </Route>
                 <Route path="/contact" element={<Contact />} />
+                     <Route path="/context" element={<Maincontext />} />
 
                 {/* universal path */}
                 <Route path="*" element={<Not />} />
