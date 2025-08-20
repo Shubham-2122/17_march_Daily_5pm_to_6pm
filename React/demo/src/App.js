@@ -8,6 +8,8 @@ import About2 from "./layout/Pages/About2";
 import About3 from "./layout/Pages/About3";
 import Not from "./layout/Pages/Not";
 import Maincontext from "./context/Maincontext";
+import UseReducer from "./Hooks/UseReducer";
+import UseRefence from "./Hooks/UseRefence";
 // import Propsdara from "./Props/Propsdara";
 // import Statedata from "./state/Statedata";
 // import Formdata from "./Form_handling/Formdata";
@@ -70,6 +72,8 @@ function App() {
                 </Route>
                 <Route path="/contact" element={<Contact />} />
                      <Route path="/context" element={<Maincontext />} />
+                     <Route path="/reducer" element={<UseReducer />} />
+                     <Route path="/ref" element={<UseRefence />} />
 
                 {/* universal path */}
                 <Route path="*" element={<Not />} />
