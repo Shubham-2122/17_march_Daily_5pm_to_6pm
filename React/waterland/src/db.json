@@ -1,0 +1,82 @@
+{
+  "blogs": [
+    {
+      "id": "1",
+      "name": "Why Children Dont Like Getting Out Of The Water",
+      "date": "August 19, 2025",
+      "event": "Vacation",
+      "image": "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?_gl=1*1sypsus*_ga*NDc1OTUxMjc4LjE3NTY4MDMzOTU.*_ga_8JE65Q40S6*czE3NTczMzI0NTIkbzIkZzEkdDE3NTczMzI0NjUkajQ3JGwwJGgw",
+      "desc": "This is image vaction trip...."
+    },
+    {
+      "id": "2",
+      "name": "3 Tips for Your Family Spring Break at Amusement Park",
+      "date": "August 25, 2024",
+      "event": "Insight",
+      "image": "https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg?_gl=1*3i8rcd*_ga*NDc1OTUxMjc4LjE3NTY4MDMzOTU.*_ga_8JE65Q40S6*czE3NTczMzI0NTIkbzIkZzEkdDE3NTczMzI1NTEkajYwJGwwJGgw",
+      "desc": "This is image Insight trip...."
+    },
+    {
+      "id": "1757678498889",
+      "name": "add blogs",
+      "date": "2025-09-13",
+      "event": "Insight",
+      "image": "https://images.pexels.com/photos/33660828/pexels-photo-33660828.jpeg?_gl=1*8396lo*_ga*NDc1OTUxMjc4LjE3NTY4MDMzOTU.*_ga_8JE65Q40S6*czE3NTc2Nzg0NzckbzQkZzEkdDE3NTc2Nzg0ODIkajU1JGwwJGgw",
+      "desc": "Hello this blogs data "
+    }
+  ],
+  "admin": [
+    {
+      "id": "1",
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "password": "1234"
+    }
+  ],
+  "user": [
+    {
+      "id": "1",
+      "name": "vivek",
+      "email": "vivek@gmail.com",
+      "password": "1234",
+      "status": "unblock"
+    },
+    {
+      "id": "2",
+      "name": "divya",
+      "email": "divya@gmail.com",
+      "password": "123456",
+      "status": "unblock"
+    },
+    {
+      "id": "3",
+      "name": "kushal",
+      "email": "kushal@gmail.com",
+      "password": "4321",
+      "status": "unblock"
+    }
+  ],
+  "team": [
+    {
+      "id": "1",
+      "name": "William John",
+      "work": "Profession",
+      "image": "https://media.istockphoto.com/id/1364392195/photo/portrait-of-young-woman-stock-photo.jpg?b=1&s=612x612&w=0&k=20&c=lzg3DKf4Z3b4E8WxuU6IPlU0K2AqgGq5UVxw7PeIb-Y=",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, quibusdam eveniet itaque provident sequi deserunt."
+    },
+    {
+      "id": "2",
+      "name": "David James",
+      "work": "Profession",
+      "image": "https://media.istockphoto.com/id/1401481821/photo/handsome-young-man-in-working-on-laptop-stock-photo.jpg?b=1&s=612x612&w=0&k=20&c=DcG0adCfrfa--LTyWeQmbZcALogRsayKv_xbhGl4R5Y=",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, quibusdam eveniet itaque provident sequi deserunt."
+    },
+    {
+      "id": "3",
+      "name": "Michael John",
+      "work": "Profession",
+      "image": "https://media.istockphoto.com/id/1371989011/photo/cropped-shot-of-an-attractive-young-businesswoman-sending-a-text-while-working-in-her-office.jpg?b=1&s=612x612&w=0&k=20&c=gqg57IbPoQ1lE_c9oG0Qx2PAebvMZGcWv-isgRHsKMY=",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, quibusdam eveniet itaque provident sequi deserunt."
+    }
+  ]
+}
