@@ -17,6 +17,7 @@ import Blogsmanage from "./Admin/Apages/Blogsmanage";
 import TeamMange from "./Admin/Apages/TeamMange";
 import Addblog from "./Admin/Apages/Addblog";
  import { ToastContainer, toast } from 'react-toastify';
+import Alogin from "./Admin/Apages/Alogin";
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
           <Route path="/blogmanage" element={<Blogsmanage />} />
           <Route path="/addblog" element={<Addblog />} />
           <Route path="/teamManger" element={<TeamMange />} />
+          <Route path="/alogin" element={<Alogin />} />
           
 
         </Routes>

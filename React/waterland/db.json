@@ -19,7 +19,7 @@
     {
       "id": "1757506495314",
       "name": "tourse and travels",
-      "date": "2025-10-30",
+      "date": "2025-11-28",
       "event": "Insight",
       "image": "https://images.pexels.com/photos/2161449/pexels-photo-2161449.jpeg?_gl=1*1gahnbx*_ga*MTIyOTE2MTcxMy4xNzU3NTA2NDUz*_ga_8JE65Q40S6*czE3NTc1MDY0NTIkbzEkZzEkdDE3NTc1MDY0NzMkajM5JGwwJGgw",
       "desc": "Tour vaction photos image uise"
@@ -46,6 +46,12 @@
       "id": "1",
       "name": "admin",
       "email": "admin@gmail.com",
+      "password": "1234"
+    },
+     {
+      "id": "2",
+      "name": "subadmin",
+      "email": "admin1@gmail.com",
       "password": "1234"
     }
   ],
