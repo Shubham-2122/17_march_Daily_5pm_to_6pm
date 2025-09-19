@@ -18,6 +18,8 @@ import TeamMange from "./Admin/Apages/TeamMange";
 import Addblog from "./Admin/Apages/Addblog";
  import { ToastContainer, toast } from 'react-toastify';
 import Alogin from "./Admin/Apages/Alogin";
+import Login from "./Website/Pages/Login";
+import Register from "./Website/Pages/Register";
 
 function App() {
   return (
@@ -36,6 +38,8 @@ function App() {
           <Route path="/team" element={<Team />} />
           <Route path="/test" element={<Testi />} />
           <Route path='/contact' element={<Contact />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
 
           {/* unviserl */}
           <Route path="*" element={<NotFound />} />

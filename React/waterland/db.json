@@ -48,7 +48,7 @@
       "email": "admin@gmail.com",
       "password": "1234"
     },
-     {
+    {
       "id": "2",
       "name": "subadmin",
       "email": "admin1@gmail.com",
@@ -75,6 +75,13 @@
       "name": "kushal",
       "email": "kushal@gmail.com",
       "password": "4321",
+      "status": "unblock"
+    },
+    {
+      "id": "1758283905560",
+      "name": "sujal",
+      "email": "sujal@gmail.com",
+      "password": "123456",
       "status": "unblock"
     }
   ],
