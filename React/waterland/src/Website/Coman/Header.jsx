@@ -1,7 +1,24 @@
-import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Link, NavLink, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify/unstyled";
 
 function Header() {
+
+  const redirect = useNavigate()
+
+  useEffect(() => {
+    if (!localStorage.getItem("Uid")) {
+      redirect("/login")
+    }
+  }, )
+
+  const logout = () => {
+    localStorage.removeItem("Uid");
+    localStorage.removeItem("Uname");
+    redirect("/login");
+    toast.success("succfully logout");
+  }
+
   return (
     <div>
       {/* Navbar & Hero Start */}
@@ -69,26 +86,36 @@ function Header() {
                 Contact
               </NavLink>
             </div>
-            <div className="team-icon d-none d-xl-flex justify-content-center me-3">
-              <a className="btn btn-square btn-light rounded-circle mx-1" href>
-                <i className="fab fa-facebook-f" />
-              </a>
-              <a className="btn btn-square btn-light rounded-circle mx-1" href>
-                <i className="fab fa-twitter" />
-              </a>
-              <a className="btn btn-square btn-light rounded-circle mx-1" href>
-                <i className="fab fa-instagram" />
-              </a>
-              <a className="btn btn-square btn-light rounded-circle mx-1" href>
-                <i className="fab fa-linkedin-in" />
-              </a>
-            </div>
-            <a
-              href="#"
-              className="btn btn-primary rounded-pill py-2 px-4 flex-shrink-0"
-            >
-              Get Started
-            </a>
+            {
+                (() => {
+                  if (localStorage.getItem("Uid")) {
+                    return (
+                      <NavLink
+                      to="/edit"
+                        className="nav-item nav-link"
+                      >hello..{localStorage.getItem("Uname")}</NavLink>
+                    )
+                  }
+                })()
+              }
+              {
+                (()=>{
+                  if(localStorage.getItem("Uid")){
+                    return(
+                       <NavLink 
+                       onClick={logout}
+                        className="nav-item nav-link"
+                      >logout</NavLink>
+                    )
+                  }
+                  else{
+                     <NavLink
+                        to="Alogin"
+                        className="nav-item nav-link"
+                      >login</NavLink>
+                  }
+                })()
+              }
           </div>
         </nav>
       </div>

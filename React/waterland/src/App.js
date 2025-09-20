@@ -20,6 +20,7 @@ import Addblog from "./Admin/Apages/Addblog";
 import Alogin from "./Admin/Apages/Alogin";
 import Login from "./Website/Pages/Login";
 import Register from "./Website/Pages/Register";
+import EditProfile from "./Website/Pages/EditProfile";
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
           <Route path='/contact' element={<Contact />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/edit" element={<EditProfile />}/>
 
           {/* unviserl */}
           <Route path="*" element={<NotFound />} />
