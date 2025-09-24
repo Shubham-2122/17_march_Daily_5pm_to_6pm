@@ -1,0 +1,44 @@
+Redux :- redux javscript lib
+
+global state manage
+
+React , agule,vue
+
+React+redux
+Redux flow 
+
+Store :- data
+reduce :- logic
+Action :- use trigger
+
+Book name 
+
+user -> shopkeeper(store)
+
+Action :- bookname (user)
+shopkeeper (action) :- bookname(active,exit)
+store :- bookname -> user
+
+usecontext ->state global
+useReducer ->state logic reduce
+
+state change hooks
+usecontext :- useSelector(data)
+useReducer :- useDispatch(Function_state)
+
+React+redux
+store ->folder
+action ->folder
+reducer ->folder
+
+redux toolkit(rtk)
+
+store -> folder
+Slice -> Action,reducer 
+
+
+
+
+
+
+
