@@ -1,0 +1,38 @@
+{
+    "user":[
+        {
+            "id":1,
+            "name":"vivek",
+            "email":"vivek@gmail.com",
+            "password":"123456"
+        },
+        {
+            "id":2,
+            "name":"divya",
+            "email":"divya@gmail.com",
+            "password":"123456"
+        },
+        {
+            "id":3,
+            "name":"sujal",
+            "email":"sujal@gmail.com",
+            "password":"1234"
+        }
+    ],
+    "product":[
+        {
+            "id":1,
+            "name":"car 1",
+            "desc":"car data ",
+            "image":"https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?_gl=1*33anpc*_ga*OTgxMzcxNzg3LjE3NTE4ODEzNTk.*_ga_8JE65Q40S6*czE3NTkxNDY1MDQkbzI2JGcxJHQxNzU5MTQ2NTEyJGo1MiRsMCRoMA..",
+            "price":"20000"
+        },
+          {
+            "id":2,
+            "name":"car 2",
+            "desc":"car2 data ",
+            "image":"https://images.pexels.com/photos/919073/pexels-photo-919073.jpeg?_gl=1*1emkkrr*_ga*OTgxMzcxNzg3LjE3NTE4ODEzNTk.*_ga_8JE65Q40S6*czE3NTkxNDY1MDQkbzI2JGcxJHQxNzU5MTQ2NTE2JGo0OCRsMCRoMA..",
+            "price":"30000"
+        }
+    ]
+}
