@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { showuser } from '../Slice/userSlice'
+import { deleteuser, showuser } from '../Slice/userSlice'
+import { Link } from 'react-router-dom'
 
 function Read() {
 
@@ -13,6 +14,11 @@ function Read() {
   useEffect(() => {
     dispatch(showuser())
   }, [])
+
+  const deletedata =(id)=>{
+    dispatch(deleteuser(id))
+    dispatch(showuser())
+  }
 
   return (
     <div className='container'>
@@ -32,7 +38,7 @@ function Read() {
           {
             users && users.map((data, index) => {
               return (
-                <tr className='text-center'>
+                <tr className='text-center' key={index}>
                   <th scope="row">{data.id}</th>
                   <td>
                     {data.name}
@@ -41,8 +47,8 @@ function Read() {
                   <td>{data.password}</td>
                   <td>
                     <button className='btn btn-info'>View</button>
-                    <button className='btn btn-success mx-2'>Edit</button>
-                    <button className='btn btn-danger'>Delete</button>
+                    <Link to={`/edit/${data.id}`} className='btn btn-success mx-2'>Edit</Link>
+                    <button className='btn btn-danger' onClick={()=>deletedata(data.id)}>Delete</button>
                   </td>
                 </tr>
               )
